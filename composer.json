@@ -1,0 +1,23 @@
+{
+    "name": "astricelng/locationmod",
+    "description": "A location package for laravel",
+    "authors": [
+        {
+            "name": "Astrid Narvaez",
+            "email": "astricelng@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Astricelng\\LocationMod\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Astricelng\\LocationMod\\Providers\\LocationModServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
