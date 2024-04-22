@@ -1,7 +1,7 @@
 <?php
 
 namespace Astricelng\LocationMod\Providers;
-use Astricelng\Careerform\Console\InstallLocationPackage;
+use Astricelng\LocationMod\Console\InstallLocationPackage;
 use Illuminate\Support\ServiceProvider;
 
 class LocationModServiceProvider extends ServiceProvider {
