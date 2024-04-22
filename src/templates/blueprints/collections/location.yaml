@@ -1,0 +1,115 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: location_coming
+            field:
+              default: false
+              type: toggle
+              display: 'Coming soon'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: location_address
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Address
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: location_address_url
+            field:
+              input_type: url
+              antlers: false
+              type: text
+              display: 'Address url'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: location_open_hours
+            field:
+              fields:
+                -
+                  handle: open_day
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: Day
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: open_hour
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: Hour
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+              mode: table
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: 'Open hours'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: location_menu_link
+            field:
+              input_type: url
+              antlers: false
+              type: text
+              display: 'Menu link'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - locations
+              max_items: 1
+              listable: false
+              localizable: true
+title: Location
