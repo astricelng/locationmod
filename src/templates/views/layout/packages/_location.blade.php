@@ -54,7 +54,7 @@
                     </h2>
                     <a :href="dataPanel.location_address_url" target="_blank" class="leading-none mt-5" v-text="dataPanel.location_address">
                     </a>
-                    <div class="mt-10">
+                    <div class="mt-10" v-if="dataPanel.location_open_hours.length > 0">
                         <template
                             v-for="(operation, index) in dataPanel.location_open_hours"
                         >
