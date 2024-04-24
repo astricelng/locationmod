@@ -75,7 +75,7 @@
                             </div>
                         </template>
                     </div>
-                    <div class="mt-10">
+                    <div class="mt-10" v-if="dataPanel.location_menu_link">
                         <a :href="'/career#'+dataPanel.location_menu_link" class="font-bold text-xl leading-none  uppercase underline">
                             View Menu
                         </a>
