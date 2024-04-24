@@ -56,15 +56,15 @@ class InstallLocationPackage extends Command
 
     private function copyLocationPage(){
 
-        $locationPage = app('files')->get(__DIR__ . '/../templates/views/layout/partials/location.blade.php');
+        $locationPage = app('files')->get(__DIR__ . '/../templates/views/layout/packages/_location.blade.php');
 
         if (!file_exists(base_path('resources/views/layout/')))
             mkdir(base_path('resources/views/layout/'), 0770, true);
 
-        if (!file_exists(base_path('resources/views/layout/partials/')))
-            mkdir(base_path('resources/views/layout/partials/'), 0770, true);
+        if (!file_exists(base_path('resources/views/layout/packages/')))
+            mkdir(base_path('resources/views/layout/packages/'), 0770, true);
 
-        app('files')->put(base_path('resources/views/layout/partials/location.blade.php'), $locationPage);
+        app('files')->put(base_path('resources/views/layout/packages/_location.blade.php'), $locationPage);
 
     }
 
