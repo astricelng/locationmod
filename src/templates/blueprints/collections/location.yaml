@@ -89,9 +89,7 @@ tabs:
           -
             handle: location_menu_link
             field:
-              input_type: url
-              antlers: false
-              type: text
+              type: link
               display: 'Menu link'
               listable: hidden
               instructions_position: above
