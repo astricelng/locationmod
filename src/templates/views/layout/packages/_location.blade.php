@@ -28,6 +28,9 @@
                             >
                                 {{ $loc['title'] }}
                             </h1>
+                            @if ($loc['location_coming']->raw() === true)
+                                <span class="text-sm">Coming soon</span>
+                            @endif
                             <button
                                 class="flex leading-none underline bg-transparent mt-2.5"
                                 @click="{{ 'showMore('.json_encode($loc).')' }}"
